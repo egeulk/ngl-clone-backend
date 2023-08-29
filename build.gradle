@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '3.0.8'
+    id 'io.spring.dependency-management' version '1.1.0'
+}
+
+group = 'com.ngl.her'
+version = '0.0.1-SNAPSHOT'
+
+java {
+    sourceCompatibility = '17'
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.springframework.boot:spring-boot-starter-data-jdbc'
+    implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+    implementation 'org.springframework.boot:spring-boot-starter-security'
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+    developmentOnly 'org.springframework.boot:spring-boot-devtools'
+    runtimeOnly 'org.postgresql:postgresql'
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.security:spring-security-test'
+
+    //websocket
+    implementation 'org.springframework:spring-websocket'
+    implementation 'org.springframework:spring-messaging'
+
+    // JWT API
+    implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+
+    // JWT Implementation (Runtime scope)
+    runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+
+    // JWT Jackson Integration (Runtime scope)
+    runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+
+    implementation group: 'org.hibernate.validator', name: 'hibernate-validator', version: '7.0.1.Final' // Check for the latest version
+
+    implementation 'com.fasterxml.jackson.core:jackson-databind'
+
+
+}
+
+tasks.named('test') {
+    useJUnitPlatform()
+}
