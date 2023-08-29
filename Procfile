@@ -1,1 +1,1 @@
-web: java -Dserver.port=8080
+web: java -Dserver.port=8080 -jar build/libs/nglCloneHer-0.0.1.jar

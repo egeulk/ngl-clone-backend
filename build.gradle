@@ -11,6 +11,11 @@ java {
     sourceCompatibility = '17'
 }
 
+jar {
+    baseName = 'nglCloneHer'
+    version = '0.0.1'
+}
+
 repositories {
     mavenCentral()
 }
