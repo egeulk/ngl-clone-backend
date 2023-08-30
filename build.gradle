@@ -42,7 +42,7 @@ dependencies {
 
     implementation 'com.fasterxml.jackson.core:jackson-databind'
 // https://mvnrepository.com/artifact/org.apache.tomcat.embed/tomcat-embed-websocket
-    implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-websocket', version: '9.0.48'
+    //implementation group: 'org.apache.tomcat.embed', name: 'tomcat-embed-websocket', version: '9.0.48'
 
 
 }
