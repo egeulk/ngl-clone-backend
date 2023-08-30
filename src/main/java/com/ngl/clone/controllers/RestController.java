@@ -32,7 +32,7 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 @org.springframework.web.bind.annotation.RestController
-@CrossOrigin(origins = {"*","http://localhost:4200", "https://nursimayasor.com:4200"}, methods = {RequestMethod.GET, RequestMethod.POST}) // Apply CORS at class level
+@CrossOrigin(origins = {"*","http://localhost:4200", "https://nursimayasor.com"}, methods = {RequestMethod.GET, RequestMethod.POST}) // Apply CORS at class level
 //     @CrossOrigin(origins = "http://localhost:4200")
 public class RestController {
 
