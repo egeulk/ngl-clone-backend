@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import java.util.concurrent.ExecutionException;
 
 @org.springframework.web.bind.annotation.RestController
-@CrossOrigin(origins = {"*","http://localhost:4200", "https://nursimayasor.com:4200"}, methods = {RequestMethod.GET, RequestMethod.POST}) // Apply CORS at class level
+@CrossOrigin(origins = {"*"}, methods = {RequestMethod.GET, RequestMethod.POST}) // Apply CORS at class level
 public class NotificationController {
     private final FCMService fcm;
 
