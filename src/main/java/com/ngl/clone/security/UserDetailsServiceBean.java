@@ -14,7 +14,7 @@ public class UserDetailsServiceBean extends InMemoryUserDetailsManager  {
     private static UserDetails createUser() {
         return User.builder()
                 .username("user")
-                .password("{bcrypt}$2a$10$ixNUvj09AVsXBGWFoxwZ/.6FyWyPazybV4oBSXeQZjc4Ncl05Yxu.")
+                .password("{bcrypt}$2a$10$/0nbFVtCCHUcFdezlFC42uuJaYzfhUHZZ37PUmDw.KprAloOw00Ni")
                 .roles("USER")
                 .build();
     }
